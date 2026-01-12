@@ -21,8 +21,6 @@ console.log(favoriteApp.name);
 // Hämta värde med hakparentesnotation
 console.log(favoriteApp["name"]);
 
-// Testa med console.log
-favoriteApp.appInfo();
 console.log(`------------------------------------------------------------`);
 
 
