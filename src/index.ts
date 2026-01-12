@@ -58,7 +58,7 @@ console.log(`------------------------------------------------------------`);
 const formPost = {
     count: 1,
     article: "Trådlöst headset",
-    price: "299 SEK",
+    price: "1299 SEK",
     color: "Svart",
     status: "inStock",
     taxPercent: "25%"
@@ -91,10 +91,10 @@ if(formPost.status == "inStock") {
     // Logga ett SNYKKKTT kvitto i konsolen
     console.log(`.------------ KVITTO ------------.`);
     console.log(`| Produkt: ${formPost.article}      |`);
-    console.log(`| Pris exkl. skatt: ${priceNumber} SEK      |`);
+    console.log(`| Pris exkl. skatt: ${priceNumber} SEK     |`);
     console.log(`| Skatt: ${taxPercent} %                    |`);
     console.log(`| -------------------------------|`);
-    console.log(`| Att betala: ${finalPrice} SEK         |`);
+    console.log(`| Att betala: ${Math.round(finalPrice)} SEK           |`);
     console.log(`\`--------------------------------´`);
 
 } else {
